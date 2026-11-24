@@ -1,0 +1,26 @@
+# Shared settings (ISBI 2024). Dataset configs set `base: default.yaml` and override below.
+seed: 0
+k_fold: 5
+roi: schaefer400          # Schaefer atlas with 400 ROIs
+
+# model
+hidden_dim: 1024          # D
+num_layers: 4             # graph Transformer layers (across ROIs)
+num_time_layers: 4        # Transformer layers (across time)
+num_heads: 4
+cls_token: param          # learnable readout token
+dropout: 0.5              # before the final linear layer
+
+# optimization (Adam + one-cycle schedule)
+lr: 5.0e-6
+wd: 0.0
+minibatch_size: 4
+eval_minibatch_size: 1    # full-length time series at test time
+num_epochs: 30
+gradient_accumulation_steps: 1
+clip_grad: 0.0
+num_workers: 4
+
+# evaluation
+val_ratio: 0.0            # fraction of each training fold held out for validation
+eval_every: 30            # evaluate on the test fold every n epochs (and at the last epoch)

@@ -1,0 +1,7 @@
+base: default.yaml
+dataset: hcpep-rest
+target_feature: sex
+regression: false
+window_size: 50
+window_stride: 16
+dynamic_length: 410

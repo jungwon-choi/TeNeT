@@ -1,0 +1,7 @@
+base: default.yaml
+dataset: adhd200-rest
+target_feature: DX
+regression: false
+window_size: 16
+window_stride: 3
+dynamic_length: 74

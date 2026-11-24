@@ -1,0 +1,7 @@
+base: default.yaml
+dataset: hcp-rest
+target_feature: Gender
+regression: false
+window_size: 50
+window_stride: 16
+dynamic_length: 1200

@@ -1,0 +1,9 @@
+base: default.yaml
+dataset: abcd-rest
+target_feature: sex
+regression: false
+window_size: 50
+window_stride: 16
+dynamic_length: 380
+num_epochs: 15
+eval_every: 15

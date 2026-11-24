@@ -1,0 +1,7 @@
+base: default.yaml
+dataset: ucla-rest
+target_feature: gender
+regression: false
+window_size: 16
+window_stride: 3
+dynamic_length: 79

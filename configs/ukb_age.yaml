@@ -1,0 +1,9 @@
+base: default.yaml
+dataset: ukb-rest
+target_feature: 21003-0.0
+regression: true
+window_size: 50
+window_stride: 16
+dynamic_length: 490
+num_epochs: 15
+eval_every: 15
