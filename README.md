@@ -60,8 +60,6 @@ pip install torch==2.2.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 ```
 
-The code is tested with Python 3.10 and PyTorch 2.2 (CUDA 12.1), and also runs on CPU.
-
 ## Data preparation
 
 Place the ROI time series and the phenotype table of each dataset under `data/`:
